@@ -1,2 +1,2 @@
-# french-albert
+# French-albert
 French ALBERT model
