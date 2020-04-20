@@ -1,5 +1,7 @@
 # French-ALBERT
-We built a french ALBERT model.
+
+Introduction
+============
 
 ALBERT is "A Lite" version of BERT, a popular unsupervised language representation learning algorithm. ALBERT uses parameter-reduction techniques that allow for large-scale configurations, overcome previous memory limitations, and achieve better behavior with respect to model degradation.
 
@@ -30,10 +32,12 @@ And for "Question & answering" (SQUAD and RACE benchmarks) :
 
 The complete performances of ALBERT are showed on Github from this link : [results](https://github.com/google-research/albert#results)
 
+All that results have been established on English and Chinese Datasets. 
+
 Our work
 ========
 
-So, we built from a complete Wikipedia French Dataset a ALBERT Base model composed of 12M parameters.
+So, we built a French ALBERT base model from a complete Wikipedia French Dataset. This model is composed of 12M parameters.
 
 [id]: http://example.com/  "Optional Title Here"
 
