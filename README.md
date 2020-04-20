@@ -8,7 +8,8 @@ For a technical description of the algorithm, see the paper:
 
 The performance of ALBERT on GLUE benchmark are showed on Github from this link : [results](https://github.com/google-research/albert#results) 
 
-From a complete Wikipedia French Dataset we built a ALBERT Base model.
+So, we built from a complete Wikipedia French Dataset a ALBERT Base model.
 
+[id]: http://example.com/  "Optional Title Here"
 
 Thank you to [TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc) for their support and help during this project.
