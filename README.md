@@ -46,35 +46,28 @@ You can download the model here : [French Albert Base model](https://storage.clo
 The results
 ===========
 
-Based on this model we did 2 fine-tunings : on a classifier and on a "Question Answering" benchmark named FQuAD. 
+Based on this model we did 2 fine-tunings : on a classifier and on a "Question Answering" benchmark named FQuAD.
+This 2 tasks have been executed on TPU v3-8 on Google Cloud.
 
 ### 1. Classifier
 
-We trained our own Dataset (Insurance claims associated with contract type) and improved the result of 2% compare to BERT. The goal is to find the right contract type according a french sentence who describe the insurance claim. 
+We trained (executed 50 000 steps) our own Dataset (Insurance claims associated with contract type) and improved the result of 2% compare to BERT. The goal was to find the right contract type according a french sentence who describe the insurance claim. 
 
 Here the overal results:
-1. With FastText the result reached    : 85%
-1. With BERT large the result reached  : 86.5%
-1. With ALBERT base the result reached : 88.5%
+a. With FastText the result reached    : 85%
+a. With BERT large the result reached  : 86.5%
+a. With ALBERT base the result reached : 88.5%
+
+You can find some detailled explanations on a news we wrote on Linkedin [here](https://www.linkedin.com/pulse/un-exemple-de-cas-dusage-du-traitement-langage-naturel-chauvin/?trackingId=fmFsSTHhRnSJFAekFfhR%2Bw%3D%3D).  
 
 ### 2. "Question Answering" benchmark
 
 Of course the "Question & Answering" SQUAD Dataset constists only of English texts. Fortunatelly recently a French "Question & Answering" Dataset has been built by the Illuin Technology company named FQuAD. You can download here for [Training Dataset](https://storage.googleapis.com/illuin/fquad/train.json.zip) and [Validation Dataset](https://storage.googleapis.com/illuin/fquad/valid.json.zip). These Dataset are under this licence [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/#).
 
-[id]: http://example.com/  "Optional Title Here"
+So, from FQuAD we fine-tuned the model on the Question Answering task. The results are modest. The F1 score has reached 79%. We are far from the 90.2% of the Squad 1.1 English Albert base and even far from the "Illuin technology" results of 88% trained on CamemBERT (Witch is RoBERTa model trained on French Dataset by INRIA institut).
 
-Thank you to [TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc) for their support and help during this project.
+We can give 3 reasons to explain those results :
 
 
-Performance of ALBERT on GLUE benchmark results using a single-model setup on
-dev:
 
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
 
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
