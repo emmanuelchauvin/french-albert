@@ -45,15 +45,17 @@ You can download the model here : [French Albert Base model](https://storage.clo
 
 The results
 ===========
-ttt
-toto 
 
 Based on this model we did 2 fine-tunings : on a classifier and on a "Question Answering" benchmark named FQuAD. 
 
-#### 1) Classifier
+### 1) Classifier
 
-We trained our own Dataset (Insurance complains associated with contract type) and improve the result compare to BERT of 2.5%.
+We trained our own Dataset (Insurance complains associated with contract type) and improve the result of 2% compare to BERT. Here the results :
+##### a. With FastText the result reached 85%
+##### b. With BERT large the result reached 86.5%
+##### c. With ALBERT base the result reached 88.5%
 
+### 2) "Question Answering" benchmark
 
 Of course the "Question & Answering" SQUAD Dataset constists only of English texts. Fortunatelly recently a French "Question & Answering" Dataset has been built by the Illuin Technology company named FQuAD. You can download here for [Training Dataset](https://storage.googleapis.com/illuin/fquad/train.json.zip) and [Validation Dataset](https://storage.googleapis.com/illuin/fquad/valid.json.zip). These Dataset are under this licence [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/#).
 
