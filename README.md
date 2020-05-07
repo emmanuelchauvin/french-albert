@@ -37,7 +37,7 @@ All that results have been established on English and Chinese Datasets.
 Our work
 ========
 
-So, we built a French ALBERT base model from a complete Wikipedia French Dataset. This base model is composed of 12M parameters (instead of 108M for BERT base).
+So, we built a French ALBERT base model from a complete Wikipedia French Dataset. This base model is composed of 12M parameters (instead of 108M for BERT base and 138M for RoBERTa).
 
 The model has been trained for 1.5M steps during 4 days on a [TPU POD v3-256](https://cloud.google.com/tpu/docs/types-zones) on Google Cloud. So, thank you to Google and the [TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc) for their support during this project.
 
@@ -66,10 +66,11 @@ Of course the "Question & Answering" SQUAD Dataset constists only of English tex
 
 So, from FQuAD we fine-tuned the model on the Question Answering task. The results are modest. The F1 score has reached 79%. We are far from the 90.2% of the Squad 1.1 English Albert base and even far from the "Illuin technology" results of 88% trained on CamemBERT (Witch is RoBERTa model trained on French Dataset by INRIA).
 
-We can give 3 reasons to explain those results :
+We can give 4 reasons to explain those results :
 1. Albert Large should display better results than a Albert Base
 1. A recommendation from Albert team should be to train Albert Base with 10M of steps. Instead of 1.5M steps in our case. (need of more TPU POD time :)
-1. And CamemBERT has been trained on 138GB of Data (OSCAR database) instead of 4GB with Wikipedia in our case.  
+1. And CamemBERT has been trained on 138GB of Data (OSCAR database) instead of 4GB with Wikipedia in our case. 
+1. And if we compare to Engilsh results, FQuAD contains 25 000 questions and SQUAD 100 000.  
 
-
+So, the next step will be to train a new Albert Large model on OSCAR Database. Then we will 
 
