@@ -37,7 +37,7 @@ All that results have been established on English and Chinese Datasets.
 Our work
 ========
 
-So, we built a French ALBERT base model from a complete Wikipedia French Dataset. This base model is composed of 12M parameters (instead of 108M for BERT base and 138M for RoBERTa).
+So, we built a French ALBERT base model from a complete Wikipedia French Dataset. This base model is composed of 12M parameters (instead of 108M for BERT base and 110M for RoBERTa).
 
 The model has been trained for 1.5M steps during 4 days on a [TPU POD v3-256](https://cloud.google.com/tpu/docs/types-zones) on Google Cloud. So, thank you to Google and the [TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc) for their support during this project.
 
