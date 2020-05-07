@@ -77,4 +77,4 @@ So, the next step will be to train a new Albert Large model based on OSCAR Datab
 Contacts
 ========
 
-Don't hesitate to contact me if you have any questions by email or by contacting the web site of the [MyDataBall](https://mydataball.com/fr/) company.
+Don't hesitate to contact me if you have any questions by email (manuchauvin@gmail.com) or by contacting the web site of the [MyDataBall](https://mydataball.com/fr/) company.
