@@ -50,12 +50,12 @@ Based on this model we did 2 fine-tunings : on a classifier and on a "Question A
 
 ### 1. Classifier
 
-We trained our own Dataset (Insurance claims associated with contract type) and improve the result of 2% compare to BERT. The goal is to find the right contract type according a french sentence who describe the insurance claim. 
+We trained our own Dataset (Insurance claims associated with contract type) and improved the result of 2% compare to BERT. The goal is to find the right contract type according a french sentence who describe the insurance claim. 
 
 Here the overal results:
-    1. With FastText the result reached    : 85%
-    1. With BERT large the result reached  : 86.5%
-    1. With ALBERT base the result reached : 88.5%
+1. With FastText the result reached    : 85%
+1. With BERT large the result reached  : 86.5%
+1. With ALBERT base the result reached : 88.5%
 
 ### 2. "Question Answering" benchmark
 
