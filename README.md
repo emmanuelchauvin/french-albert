@@ -64,13 +64,17 @@ You can find some detailled explanations on a news we wrote on Linkedin [here](h
 
 Of course the "Question & Answering" SQUAD Dataset constists only of English texts. Fortunatelly recently a French "Question & Answering" Dataset has been built by the Illuin Technology company named FQuAD. You can download here for [Training Dataset](https://storage.googleapis.com/illuin/fquad/train.json.zip) and [Validation Dataset](https://storage.googleapis.com/illuin/fquad/valid.json.zip). These Dataset are under this licence [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/#).
 
-So, from FQuAD we fine-tuned the model on the Question Answering task. The results are modest. The F1 score has reached 79%. We are far from the 90.2% of the Squad 1.1 English Albert base and even far from the "Illuin technology" results of 88% trained on CamemBERT (Witch is RoBERTa model trained on French Dataset by INRIA).
+So, from FQuAD we fine-tuned the model on the Question Answering task. The results are modest. The F1 score has reached 79%. We are far from the 90.2% of the Squad 1.1 English Albert base and even far from the "Illuin technology" results of 88% trained on CamemBERT (Which is RoBERTa model trained on French Dataset by INRIA).
 
 We can give 4 reasons to explain those results :
 1. Albert Large should display better results than a Albert Base
-1. A recommendation from Albert team should be to train Albert Base with 10M of steps. Instead of 1.5M steps in our case. (need of more TPU POD time :)
-1. And CamemBERT has been trained on 138GB of Data (OSCAR database) instead of 4GB with Wikipedia in our case. 
+1. A recommendation from Albert team is to train Albert Base with 10M steps. Instead of 1.5M steps in our case. (need of more TPU POD time :)
+1. CamemBERT has been trained on 138GB of Data (OSCAR database) instead of 4GB with Wikipedia in our case. 
 1. And if we compare to Engilsh results, FQuAD contains 25 000 questions and SQUAD 100 000.  
 
-So, the next step will be to train a new Albert Large model on OSCAR Database. Then we will 
+So, the next step will be to train a new Albert Large model based on OSCAR Database. 
 
+Contacts
+========
+
+Don't hesitate to contact me for accurate explanation by email or by contacting the web site of the [MyDataBall](https://mydataball.com/fr/) company.
