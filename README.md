@@ -39,7 +39,7 @@ Our work
 
 So, we built a French ALBERT base model from a complete Wikipedia French Dataset. This base model is composed of 12M parameters (instead of 108M for BERT base).
 
-The model has been trained for 1.5M steps during 4 days on a [TPU v3-256](https://cloud.google.com/tpu/docs/types-zones) on Google Cloud. So, thank you to Google and the [TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc) for their support during this project.
+The model has been trained for 1.5M steps during 4 days on a [TPU POD v3-256](https://cloud.google.com/tpu/docs/types-zones) on Google Cloud. So, thank you to Google and the [TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc) for their support during this project.
 
 You can download the model here : [French Albert Base model](https://storage.cloud.google.com/french_albert_base/french_albert_base.zip?authuser=1&hl=fr).
 
@@ -54,9 +54,9 @@ This 2 tasks have been executed on TPU v3-8 on Google Cloud.
 We trained (executed 50 000 steps) our own Dataset (Insurance claims associated with contract type) and improved the result of 2% compare to BERT. The goal was to find the right contract type according a french sentence who describe the insurance claim. 
 
 Here the overal results:
-a. With FastText the result reached    : 85%
-a. With BERT large the result reached  : 86.5%
-a. With ALBERT base the result reached : 88.5%
+1. With FastText the result reached    : 85%
+1. With BERT large the result reached  : 86.5%
+1. With ALBERT base the result reached : 88.5%
 
 You can find some detailled explanations on a news we wrote on Linkedin [here](https://www.linkedin.com/pulse/un-exemple-de-cas-dusage-du-traitement-langage-naturel-chauvin/?trackingId=fmFsSTHhRnSJFAekFfhR%2Bw%3D%3D).  
 
@@ -64,10 +64,12 @@ You can find some detailled explanations on a news we wrote on Linkedin [here](h
 
 Of course the "Question & Answering" SQUAD Dataset constists only of English texts. Fortunatelly recently a French "Question & Answering" Dataset has been built by the Illuin Technology company named FQuAD. You can download here for [Training Dataset](https://storage.googleapis.com/illuin/fquad/train.json.zip) and [Validation Dataset](https://storage.googleapis.com/illuin/fquad/valid.json.zip). These Dataset are under this licence [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/#).
 
-So, from FQuAD we fine-tuned the model on the Question Answering task. The results are modest. The F1 score has reached 79%. We are far from the 90.2% of the Squad 1.1 English Albert base and even far from the "Illuin technology" results of 88% trained on CamemBERT (Witch is RoBERTa model trained on French Dataset by INRIA institut).
+So, from FQuAD we fine-tuned the model on the Question Answering task. The results are modest. The F1 score has reached 79%. We are far from the 90.2% of the Squad 1.1 English Albert base and even far from the "Illuin technology" results of 88% trained on CamemBERT (Witch is RoBERTa model trained on French Dataset by INRIA).
 
 We can give 3 reasons to explain those results :
-
+1. Albert Large should display better results than a Albert Base
+1. A recommendation from Albert team should be to train Albert Base with 10M of steps. Instead of 1.5M steps in our case. (need of more TPU POD time :)
+1. And CamemBERT has been trained on 138GB of Data (OSCAR database) instead of 4GB with Wikipedia in our case.  
 
 
 
