@@ -39,12 +39,14 @@ Our work
 
 So, we built a French ALBERT base model from a complete Wikipedia French Dataset. This base model is composed of 12M parameters (instead of 108M for BERT base).
 
-The model has been trained 1.5M steps during 4 days on a [TPU v3-256](https://cloud.google.com/tpu/docs/types-zones) on Google Cloud. Thank you to Google and the [TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc) for their support during this project.
+The model has been trained for 1.5M steps during 4 days on a [TPU v3-256](https://cloud.google.com/tpu/docs/types-zones) on Google Cloud. So, thank you to Google and the [TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc) for their support during this project.
 
-You can download the model [here](https://storage.cloud.google.com/french_albert_base/french_albert_base.zip?authuser=1&hl=fr).
+You can download the model here : [French Albert Base model](https://storage.cloud.google.com/french_albert_base/french_albert_base.zip?authuser=1&hl=fr).
 
 The results
 ===========
+
+Of course the "Question & Answering" SQUAD Dataset constists only of English texts. Fortunatelly recently a French "Question & Answering"  Dataset has been built by the Illuin Technology company named FQuAD. You can download here for [Training Dataset](https://storage.googleapis.com/illuin/fquad/train.json.zip) and [Validation Dataset](https://storage.googleapis.com/illuin/fquad/valid.json.zip). These Dataset are under this licence [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/#).
 
 [id]: http://example.com/  "Optional Title Here"
 
