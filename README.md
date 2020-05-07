@@ -45,8 +45,17 @@ You can download the model here : [French Albert Base model](https://storage.clo
 
 The results
 ===========
+ttt
+toto 
 
-Of course the "Question & Answering" SQUAD Dataset constists only of English texts. Fortunatelly recently a French "Question & Answering"  Dataset has been built by the Illuin Technology company named FQuAD. You can download here for [Training Dataset](https://storage.googleapis.com/illuin/fquad/train.json.zip) and [Validation Dataset](https://storage.googleapis.com/illuin/fquad/valid.json.zip). These Dataset are under this licence [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/#).
+Based on this model we did 2 fine-tunings : on a classifier and on a "Question Answering" benchmark named FQuAD. 
+
+#### 1) Classifier
+
+We trained our own Dataset (Insurance complains associated with contract type) and improve the result compare to BERT of 2.5%.
+
+
+Of course the "Question & Answering" SQUAD Dataset constists only of English texts. Fortunatelly recently a French "Question & Answering" Dataset has been built by the Illuin Technology company named FQuAD. You can download here for [Training Dataset](https://storage.googleapis.com/illuin/fquad/train.json.zip) and [Validation Dataset](https://storage.googleapis.com/illuin/fquad/valid.json.zip). These Dataset are under this licence [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/#).
 
 [id]: http://example.com/  "Optional Title Here"
 
@@ -55,3 +64,7 @@ Thank you to [TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc)
 
 Performance of ALBERT on GLUE benchmark results using a single-model setup on
 dev:
+
+# This is an <h1> tag
+## This is an <h2> tag
+###### This is an <h6> tag
