@@ -54,8 +54,8 @@ This 2 tasks have been executed on TPU v3-8 on Google Cloud.
 We trained (executed 50 000 steps) our own Dataset (Insurance claims associated with contract type) and improved the result of 2% compare to BERT. The goal was to find the right contract type according a french sentence who describe the insurance claim. 
 
 Here the overal results:
-1. With FastText the result reached    : 85%
-1. With BERT large the result reached  : 86.5%
+1. With FastText the result reached : 85%
+1. With English-BERT large the result reached : 86.5%
 1. With French-ALBERT base the result reached : 88.5%
 
 You can find some detailled explanations on a news we wrote on Linkedin [here](https://www.linkedin.com/pulse/un-exemple-de-cas-dusage-du-traitement-langage-naturel-chauvin/?trackingId=fmFsSTHhRnSJFAekFfhR%2Bw%3D%3D).  
